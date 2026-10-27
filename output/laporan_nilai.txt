@@ -1,0 +1,24 @@
+====================================================
+LAPORAN REKAP DAN ANALISIS NILAI MATEMATIKA
+====================================================
+Jumlah data valid : 10
+Rata-rata         : 70.70
+Nilai minimum     : 0.00
+Nilai maksimum    : 100.00
+KKM               : 75
+Jumlah tuntas     : 5
+Belum tuntas      : 5
+
+DETAIL STATUS SISWA
+----------------------------------------------------
+Ayu                   85.00  Tuntas
+Budi                  78.00  Tuntas
+Citra                 92.00  Tuntas
+Deni                  65.00  Belum Tuntas
+Eka                   70.00  Belum Tuntas
+Fajar                 88.00  Tuntas
+Gita                  55.00  Belum Tuntas
+Hana                 100.00  Tuntas
+Indra                  0.00  Belum Tuntas
+Joko                  74.00  Belum Tuntas
+====================================================
