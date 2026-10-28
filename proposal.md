@@ -68,7 +68,7 @@ File di dalam folder `src/` berfungsi sebagai rancangan modular dan referensi pe
 MULAI
   tentukan file input, file output, dan KKM = 75
   coba buka dan baca file input
-  jika file tidak ditemukan atau gagal dibaca:
+  jika file tidak ditemukan:
     tampilkan pesan error
     SELESAI
 
@@ -81,7 +81,7 @@ MULAI
       tampilkan peringatan
       lanjutkan
     coba ubah nilai menjadi angka
-    jika gagal:
+    jika konversi gagal karena nilai bukan angka:
       tampilkan peringatan
       lanjutkan
     jika nilai di luar 0–100:
@@ -99,44 +99,32 @@ MULAI
   susun laporan
   tampilkan laporan di terminal
   coba simpan laporan ke file output
-  jika gagal:
+  jika file atau folder tujuan tidak ditemukan:
     tampilkan pesan error
 SELESAI
 ```
 
 ## 7. Struktur Program
 
-Struktur proyek mengikuti README. `main.py` merupakan titik masuk program dan dapat dijalankan secara mandiri tanpa `import`. Folder `src/` menyimpan versi fungsi yang dipisahkan berdasarkan tanggung jawab sebagai rancangan modular dan referensi pengembangan, bukan sebagai modul yang dipanggil oleh `main.py` pada tahap ini.
+Titik masuk program berada di `src/main.py`. Jalankan dari folder utama dengan `python src/main.py`, karena jalur file input dan output relatif terhadap folder utama. Sesuai batasan materi, `src/main.py` berjalan mandiri tanpa `import`; berkas lain di `src/` menyimpan fungsi yang dipisahkan berdasarkan tanggung jawab sebagai rancangan/referensi dan belum dipanggil oleh titik masuk.
 
-```text
-proyek_analisis_nilai_diselaraskan/
+~~~text
+proyek-akhir-Riki Agil Saputra-2225250026/
+├── .gitignore
 ├── README.md
-├── main.py
+├── proposal.md
 ├── data/
 │   └── nilai_contoh.txt
 ├── src/
-│   ├── analisis.py
+│   ├── main.py
 │   ├── data_io.py
+│   ├── analisis.py
 │   └── utilitas.py
 ├── tests/
 │   └── test_case.md
 └── output/
     └── .gitkeep
-```
-
-Program dijalankan dari folder utama proyek dengan perintah:
-
-```bash
-python main.py
-```
-
-`main.py` tidak dijalankan dari folder `src/`, karena jalur file input menggunakan lokasi relatif terhadap folder utama proyek.
-
-Konfigurasi yang digunakan:
-- File input: `data/nilai_contoh.txt`
-- File output: `output/laporan_nilai.txt`
-- KKM: `75`
-
+~~~
 ## 8. Struktur Data
 
 Data siswa disimpan dalam list berisi dictionary:
@@ -152,23 +140,12 @@ List menampung kumpulan siswa, sedangkan setiap dictionary menyimpan nama dan ni
 
 ## 9. Test Case
 
-Pengujian dilakukan secara manual sesuai rincian pada `tests/test_case.md`. Kondisi yang diuji mencakup:
-- data normal dengan format `Nama|Nilai`;
-- baris kosong dan komentar yang diawali `#`;
-- nilai batas 0 dan 100;
-- nilai di bawah 0 atau di atas 100;
-- nilai bukan angka;
-- format baris salah dan nama kosong;
-- file input tidak ditemukan atau gagal dibaca;
-- tidak ada data valid;
-- kegagalan penyimpanan laporan.
-
-Setelah menjalankan program, hasil laporan dapat diperiksa di `output/laporan_nilai.txt`.
+Rancangan pada `tests/test_case.md` memakai tujuh ID, kategori, dan kondisi yang sama dengan Pertemuan 15: normal, batas nilai, batas KKM, data tidak valid, data kosong, file input tidak ditemukan, dan file output tidak ditemukan. Hasil yang diharapkan mengikuti implementasi Pertemuan 14. Pada tahap ini, kasus tanpa data valid berhenti setelah menampilkan pesan; penyusunan dan penyimpanan laporan kosong menjadi peningkatan pada Pertemuan 15.
 
 ## 10. Kriteria Selesai
 
 - Semua fitur wajib berjalan sesuai deskripsi pada README.
-- `main.py` dapat dijalankan dari folder utama menggunakan `python main.py`.
+- `src/main.py` dapat dijalankan dari folder utama menggunakan `python src/main.py`.
 - Implementasi utama tidak memakai `import`.
 - Baris kosong dan komentar yang diawali `#` diabaikan.
 - Format, nama, dan nilai divalidasi sesuai ketentuan.
@@ -189,6 +166,19 @@ Setelah menjalankan program, hasil laporan dapat diperiksa di `output/laporan_ni
 
 Sesuaikan peran dengan jumlah anggota kelompok.
 
-## 12. Integritas Akademik
+## 12. Jadwal dan Milestone
+
+| Waktu | Target |
+|---|---|
+| Pertemuan 14 | Proposal, struktur proyek, pseudocode, test case awal, dan pembagian tugas |
+| Antara Pertemuan 14–15 | Implementasi awal fitur wajib |
+| Pertemuan 15 | Integrasi, pengujian, debugging, dan dokumentasi |
+| Pertemuan 16 | Presentasi, demonstrasi, dan evaluasi proyek |
+
+## 13. Repository GitHub
+
+URL remote yang tercatat pada konfigurasi Git proyek: https://github.com/RikiAgilSaputra/proyek-akhir-Riki-Agil-Saputra-2225250026. Pastikan tautan dapat diakses dan proposal sudah tercatat di repositori sebelum pengumpulan.
+## 14. Integritas Akademik
 
 Setiap anggota kelompok perlu memahami algoritma, struktur program, hasil pengujian, dan kontribusinya sendiri serta mengikuti kebijakan mata kuliah.
+
