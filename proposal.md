@@ -177,7 +177,7 @@ Sesuaikan peran dengan jumlah anggota kelompok.
 
 ## 13. Repository GitHub
 
-URL remote yang tercatat pada konfigurasi Git proyek: https://github.com/RikiAgilSaputra/proyek-akhir-Riki-Agil-Saputra-2225250026. Pastikan tautan dapat diakses dan proposal sudah tercatat di repositori sebelum pengumpulan.
+URL Remote yang tercatat pada konfigurasi Git proyek: https://github.com/RikiAgilSaputra/proyek-akhir-Riki-Agil-Saputra-2225250026. 
 ## 14. Integritas Akademik
 
 Setiap anggota kelompok perlu memahami algoritma, struktur program, hasil pengujian, dan kontribusinya sendiri serta mengikuti kebijakan mata kuliah.
