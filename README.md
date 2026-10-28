@@ -58,7 +58,7 @@ Jalankan perintah tersebut dari folder utama karena jalur input dan output dihit
 
 ## Pengujian
 
-`tests/test_case.md` memuat 10 skenario awal, termasuk data normal, batas, invalid, ketuntasan, data kosong, dan file input yang tidak ditemukan. Isi hasil aktual dan status setelah menjalankan setiap kasus.
+`tests/test_case.md` memuat 7 skenario rancangan dengan ID dan kondisi yang disamakan dengan Pertemuan 15. Jumlahnya lima kasus minimum ditambah dua kasus; hasil yang diharapkan disesuaikan dengan perilaku Pertemuan 14. Hasil aktual/status belum dicantumkan pada tahap rancangan ini.
 
 ## GitHub
 
