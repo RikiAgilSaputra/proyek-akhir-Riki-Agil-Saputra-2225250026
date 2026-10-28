@@ -62,7 +62,7 @@ Jalankan perintah tersebut dari folder utama karena jalur input dan output dihit
 
 ## GitHub
 
-Remote Git yang tercatat pada salinan ini adalah [proyek akhir Riki Agil Saputra](https://github.com/RikiAgilSaputra/proyek-akhir-Riki-Agil-Saputra-2225250026). 
+Remote git yang tercatat pada salinan ini adalah [proyek akhir Riki Agil Saputra](https://github.com/RikiAgilSaputra/proyek-akhir-Riki-Agil-Saputra-2225250026). 
 
 ## Batasan
 
