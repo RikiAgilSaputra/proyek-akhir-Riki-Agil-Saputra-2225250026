@@ -1,55 +1,69 @@
 # Program Rekap dan Analisis Nilai Matematika Kelas
 
 ## Deskripsi
-Program terminal membaca data siswa dari file teks, memvalidasi nilai pada rentang 0-100, menghitung statistik kelas, menentukan ketuntasan berdasarkan KKM, menampilkan hasil, dan menyimpan laporan.
+
+Program terminal membaca data siswa dari file teks, memvalidasi nama dan nilai pada rentang 0–100, menghitung statistik kelas, menentukan ketuntasan berdasarkan KKM, lalu menampilkan dan menyimpan laporan.
 
 ## Fitur
+
 - Membaca file berformat `Nama|Nilai`.
 - Mengabaikan baris kosong dan komentar yang diawali `#`.
-- Memeriksa format, nama, nilai numerik, serta rentang nilai 0-100.
+- Memeriksa format, nama, nilai numerik, serta rentang nilai 0–100.
 - Menghitung jumlah data, rata-rata, minimum, dan maksimum.
 - Menghitung jumlah siswa tuntas dan belum tuntas.
 - Menampilkan serta menyimpan laporan.
 
 ## Persyaratan
+
 Python 3.x. Tidak memerlukan pustaka eksternal.
 
 ## Cara Menjalankan
-Jalankan dari folder utama proyek:
 
-```bash
-python main.py
-```
+Buka terminal pada folder utama proyek dan jalankan:
 
-Jangan menjalankan `main.py` dari folder `src`, karena jalur file input relatif terhadap folder utama.
+~~~bash
+python src/main.py
+~~~
+
+Jalankan perintah tersebut dari folder utama karena jalur input dan output dihitung relatif terhadap folder itu.
 
 ## Konfigurasi
+
 - File input: `data/nilai_contoh.txt`
 - File output: `output/laporan_nilai.txt`
 - KKM: `75`
 
 ## Struktur Folder
-```text
-proyek_analisis_nilai_diselaraskan/
-|-- README.md
-|-- main.py
-|-- data/
-|   `-- nilai_contoh.txt
-|-- src/
-|   |-- analisis.py
-|   |-- data_io.py
-|   `-- utilitas.py
-|-- tests/
-|   `-- test_case.md
-`-- output/
-    `-- .gitkeep
-```
 
-## Catatan batasan materi: tanpa import
-Agar sesuai batasan materi yang belum memperbolehkan `import`, `main.py` berisi fungsi yang diperlukan sehingga dapat dijalankan secara mandiri. File di `src/` menyimpan versi fungsi yang dipisahkan berdasarkan tanggung jawab sebagai rancangan modular dan referensi pengembangan. Python tidak menyediakan pemanggilan fungsi antar-file `.py` secara normal tanpa mekanisme penghubung seperti `import`; karena itu, `main.py` belum memanggil fungsi di `src/`. Jika materi `import` sudah diperbolehkan, fungsi-fungsi dapat dipindahkan menjadi modul yang benar-benar dipakai bersama, tanpa duplikasi.
+~~~text
+.
+├── .gitignore
+├── README.md
+├── proposal.md
+├── data/
+│   └── nilai_contoh.txt
+├── src/
+│   ├── analisis.py
+│   ├── data_io.py
+│   ├── main.py
+│   └── utilitas.py
+├── tests/
+│   └── test_case.md
+└── output/
+    ├── .gitkeep
+    └── laporan_nilai.txt
+~~~
+
+`src/main.py` adalah program mandiri tanpa `import`. Modul lain di `src/` berisi fungsi yang dipisahkan berdasarkan tanggung jawab, tetapi belum dipanggil oleh `src/main.py` karena batasan materi tanpa import.
 
 ## Pengujian
-Lihat `tests/test_case.md`. Setelah menjalankan program, periksa laporan di `output/laporan_nilai.txt`.
+
+`tests/test_case.md` memuat 10 skenario awal, termasuk data normal, batas, invalid, ketuntasan, data kosong, dan file input yang tidak ditemukan. Isi hasil aktual dan status setelah menjalankan setiap kasus.
+
+## GitHub
+
+Remote Git yang tercatat pada salinan ini adalah [proyek akhir Riki Agil Saputra](https://github.com/RikiAgilSaputra/proyek-akhir-Riki-Agil-Saputra-2225250026). Pastikan repositori dapat diakses sebelum pengumpulan.
 
 ## Batasan
-Program menggunakan antarmuka terminal, file teks, fungsi, list, dictionary, perulangan, seleksi, dan penanganan error dasar. Tidak memakai GUI, web, atau pustaka eksternal.
+
+Program memakai antarmuka terminal, file teks, fungsi, list, dictionary, perulangan, seleksi, dan penanganan error dasar. Program tidak memakai GUI, web, atau pustaka eksternal.

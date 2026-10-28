@@ -133,7 +133,7 @@ def main():
 
     try:
         data = baca_data(FILE_INPUT)
-    except (OSError, UnicodeError) as error:
+    except FileNotFoundError as error:
         print(f"Gagal membaca file '{FILE_INPUT}': {error}")
         return
 
@@ -150,7 +150,7 @@ def main():
     try:
         with open(FILE_OUTPUT, "w", encoding="utf-8") as file:
             file.write(laporan)
-    except OSError as error:
+    except FileNotFoundError as error:
         print(f"Gagal menyimpan laporan ke '{FILE_OUTPUT}': {error}")
         return
 
